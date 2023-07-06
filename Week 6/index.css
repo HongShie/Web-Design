@@ -1,0 +1,118 @@
+div#container{
+    background-color: #F1F1F1;
+    max-width: 1024px;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+}
+body{
+    margin-top: 0px;
+}
+div#header img{
+    height: 100px;
+}
+div#navigation{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgba(0, 0, 0, 0.311);
+}
+div#navigation div#left{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #ffffff00;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+div#navigation div#left div{
+    display: flex;
+    justify-content: left;
+    flex-wrap: nowrap;
+    padding-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    background-color: #ffffff00;
+}
+div#navigation div#left div:hover{
+    background-color: #F1F1F1;
+}
+div#navigation div#left img{
+    padding-left: 10px;
+    padding-top: 2.5px;
+    padding-right: 2px;
+}
+ div#navigation div#right{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: end;
+    background-color: #ffffff00;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 50%;
+}
+div#navigation div#right img{
+    flex-wrap: nowrap;
+    padding: 10px;
+    background-color: #ffffff00;
+}
+div#navigation div#right img:hover{
+    background-color: #F1F1F1;
+}
+
+
+/* responsive column */
+div#navigation2{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgba(129, 255, 186, 0.311);
+}
+div#navigation2 div{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 33.333%;
+}
+div#navigation2 div:hover{
+    background-color: #F1F1F1;
+}
+@media screen and (max-width: 800px) {
+    div#navigation2 {
+        flex-direction: column;
+    }
+    div#navigation2 div{
+        color:tomato;
+        width: 100%;
+    }
+}
+
+
+div#navigation3{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(129, 255, 186, 0.311);
+}
+div#navigation3 div{
+    display: flex;
+    width: 33.333%;
+}
+div#navigation3 div:hover{
+    background-color: #F1F1F1;
+}
+@media screen and (max-width: 900px) {
+    div#navigation3 div{
+        color: rgb(255, 0, 0);
+        width: 50%;
+    }
+    div#navigation3 div#c{
+        color: yellow;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    div#navigation3 div{
+        color: rgb(0, 85, 255);
+        width: 100%;
+    }
+}
+  
