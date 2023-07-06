@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+header{
+    background-color: rgba(51, 51, 51,0.5);
+    color: antiquewhite;
+    font-size: 20px;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 20px;
+    text-align: left;
+    width: 200px;
+    border: 10px solid tomato;
+}
+body{
+    background-color: white;
+}
+div#boxborder{
+    position: absolute;
+    left: 25%;
+    top: -35px;
+    width: 50%;
+    padding-top: 30px;
+    text-align: center ;
+    border: 10px solid black;
+}
+h1{
+    font-size: 55px;
+    font-family: 'Lato' , serif;
+    font-weight: 800;
+}
+p{
+    font-size: 25px;
+    font-family: 'Lato' , serif;
+    font-weight: 300;
+}
+div#customer1{
+    position: absolute;
+    margin-left: 10%;
+    width: 300px;
+    margin-top: 22%;
+}
+div#picture1 img{
+    object-fit: cover;
+    width: 300px;
+    height: 200px;
+}
+div#picture1 img{
+    object-fit: cover;
+    object-position: center top;
+    transform-origin: center 90px;
+    width: 100%;
+    height: auto;
+}
+div#name1 h3{
+    font-family: 'Lato' , sans-serif;
+    text-align: center;
+}
+div#review1 p{
+    font-family: 'Lato' , sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+div#customer2{
+    position: absolute;
+    margin-left: 40%;
+    width: 300px;
+    margin-top: 22%;
+}
+div#picture2{
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
+}
+div#picture2 img{
+    object-fit: cover;
+    object-position: center top;
+    transform-origin: center 90px;
+    width: 100%;
+    height: auto;
+}
+div#name2 h3{
+    font-family: 'Lato' , sans-serif;
+    text-align: center;
+}
+div#review2 p{
+    font-family: 'Lato' , sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+div#customer3{
+    position: absolute;
+    margin-left: 70%;
+    width: 300px;
+    margin-top: 22%;
+}
+div#picture3{
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
+}
+div#picture3 img{
+    object-fit: cover;
+    object-position: center top;
+    transform-origin: center 90px;
+    width: 100%;
+    height: auto;
+}
+div#name3 h3{
+    font-family: 'Lato' , sans-serif;
+    text-align: center;
+}
+div#review3 p{
+    font-family: 'Lato' , sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: center;
+}
