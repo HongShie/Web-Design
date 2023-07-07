@@ -67,8 +67,7 @@ div#menuline{
     justify-content: space-between;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 400px;
-    padding-right: 400px;
+    padding-left: 50%;
     background-color:rgba(0, 0, 255, 0.2);
     border-radius: 10px;
     overflow: hidden;
