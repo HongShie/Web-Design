@@ -32,7 +32,8 @@
             </div>
         </div>
         <div id="slideshow">
-            <img src="img/slideshowdemo.jpeg" alt="slideshow" height="300px" width="100%">
+            <img class="mySlides w3-animate-right" src="img/slideshowdemo.jpeg" alt="slideshow" height="300px" width="100%">
+            <img class="mySlides w3-animate-right" src="img/slideshowdemo3.jpg" alt="slideshow" height="300px" width="100%">
         </div>
         <div id="feature">
             <div>
@@ -64,5 +65,22 @@
                 Just a footer :D
             </div>
         </div>
+
+        <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 2500);    
+            }
+            </script>
     </body>
 </html>
