@@ -31,12 +31,12 @@ div#right{
 div#left_background{
   width: 100%;
   height: 100%;
-  background-color: #e0c9a6b2;
+  background-color: #e0c9a6d2;
 }
 div#right_background{
   width: 100%;
   height: 100%;
-  background-color: #e0c9a699;
+  background-color: #e0c9a6e4;
 }
 div#left_content{
   color: aliceblue;
@@ -59,7 +59,7 @@ div#button_1{
   transition-timing-function: ease-in-out;
 }
 div#button_1:hover{
-  width: 500px;
+  width: 250px;
   .hovered{
     display: flex;
     flex-wrap: nowrap;
@@ -88,7 +88,7 @@ div#button_2{
   transition-timing-function: ease-in-out;
 }
 div#button_2:hover{
-  width: 375px;
+  width: 250px;
   .hovered{
     display: flex;
     flex-wrap: nowrap;
@@ -118,6 +118,10 @@ h2{
     typing 5.5s steps(40, end),
     blink-caret .75s step-end infinite;
 }
+a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.75);
+}
 
 @keyframes slideDown {
   0% { 
@@ -145,4 +149,25 @@ h2{
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: rgb(255, 255, 255); }
+}
+
+@media screen and (max-width: 400px) {
+  body{
+    width: 100%;
+    display: block;
+  }
+  div#left{
+    width: 100%;
+    height: 100%;
+  }
+  div#right{
+    height: 0%;
+  }
+  div#left_content{
+    padding-top: 400px;
+    padding-left: 30px;
+  }
+  h2{
+    font-size: 42px;
+  }
 }

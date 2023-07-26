@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+  margin: 0%;
+  width : 100%;
+  height: 100%;
+  background-color: #E0C9A6;
+}
+div#navigation_bar{
+  position: fixed;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 75px;
+  background-color: #E0C9A6;
+}
+div#left_bar{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  /* background-color: rgba(0, 0, 0, 0.247); */
+  width: 50%;
+  height: 100%;
+  margin-left: 60px;
+  animation: slideDown 500ms linear;
+
+}
+div#left_bar div{
+  font-size: 24px;
+  font-weight: 200;
+  font-family: 'Outfit', sans-serif;
+  
+}
+div#right_bar{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  /* background-color: rgba(0, 0, 0, 0.247); */
+  width: 50%;
+  height: 100%;
+  justify-content: end;
+  margin-right: 60px;
+  
+}
+div#right_bar div{
+  padding: 10px;
+  margin-left: 30px;
+  font-size: 24px;
+  font-weight: 200;
+  font-family: 'Outfit', sans-serif;
+  animation: slideDown 500ms linear;
+}
+div#right_bar div:hover{
+  background-color: rgba(255, 0, 76, 0.5);
+  color: aliceblue;
+  border-radius:4cm;
+  overflow: hidden;
+}
+div#divider{
+  position: fixed;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 93%;
+  height: 1px;
+  background-color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 75px;
+}
+div#content{
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 750px;
+}
+div#left{
+  width: 50%;
+  height: 100%;
+}
+div#wrapping{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-left: 80px;
+}
+div#email{
+  padding-top: 45%;
+  width: 100%;
+  height: 15%;
+  padding-bottom: 5%;
+}
+div#email>h2{
+  margin: 0%;
+}
+div#email>p{
+  margin: 0%;
+}
+div#social{
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 25%;
+}
+div#social>div{
+  width: 33%;
+}
+div#social>div>p{
+  margin: 0%;
+}
+div#right{
+  display: flex;
+  justify-content: end;
+  width: 50%;
+  height: 100%;
+  margin-top: 6px;
+}
+div#right>img{
+  height: 100%;
+}
+h2{
+  font-size: 60px;
+  font-weight: 600;
+  font-family: 'Outfit', sans-serif;
+  color: rgba(0, 0, 0, 0.75);
+}
+h3{
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Outfit', sans-serif;
+  color: rgba(0, 0, 0, 0.75);
+}
+p{
+  font-size: 30px;
+  font-weight: 200;
+  font-family: 'Outfit', sans-serif;
+  color: rgba(0, 0, 0, 0.75);
+}
+a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+@keyframes slideDown {
+  0% { 
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotation{
+  50%{
+    transform: rotate(180deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body{
+    width: 100%;
+    display: block;
+  }
+  p{
+    margin: 0%;
+  }
+  div#navigation_bar{
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 300px;
+  }
+  div#divider{
+    width: 85%;
+    margin-top: 300px;
+  }
+  div#left_bar{
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 0%;
+    width: 100%;
+    height: 25%;
+  }
+  div#left_bar>div>img{
+    height: 50px;
+  }
+  div#right_bar{
+    justify-content: center;
+    margin-right: 0%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 75%;
+  }
+  div#right_bar>div{
+    display: flex;
+    width: 100%;
+    height: 2.5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0%;
+  }
+  div#left{
+    width: 100%;
+  }
+  div#right{
+    display: none;
+    width: 0%;
+    height: 0%;
+  }
+  div#wrapping{
+    margin-top: 300px;
+    padding-top: 150px;
+    padding-left: 0px;
+  }
+  div#content{
+    height: 300px;
+  }
+  div#email{
+    height: 50%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+  }
+  div#email>h2{
+    padding-left: 15px;
+    font-size: 40px;
+  }
+  div#email>p{
+    padding-left: 15px;
+    font-size: 28px;
+  }
+  div#social{
+    height: 50%;
+    flex-wrap: wrap;
+  }
+  div#social>div{
+    width: 100%;
+    padding-bottom: 15px;
+  }
+  div#social>div>p{
+    padding-left: 15px;
+  }
+}
